@@ -23,8 +23,9 @@ class TaskViewController : UIViewController {
     var btnImg:UIImage!
     
     override func viewDidLoad() {
-        btnImg = UIImage(named:"smileface.jpg")
-        donebtn.setImage(btnImg, forState: .Normal)
+        // btnImg = UIImage(named:"smileface.jpg")
+        // donebtn.setImage(btnImg, forState: .Normal)
+        donebtn.setTitle("Done", forState: UIControlState.Normal)
         super.viewDidLoad();
         getup();
         //nextTask();

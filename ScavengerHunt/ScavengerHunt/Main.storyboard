@@ -131,7 +131,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2884" y="1048"/>
+            <point key="canvasLocation" x="3348" y="644"/>
         </scene>
         <!--List View Controller-->
         <scene sceneID="lle-op-LCg">
@@ -201,7 +201,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qJS-7D-cgh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1341" y="1010"/>
+            <point key="canvasLocation" x="1813" y="720"/>
         </scene>
         <!--List Nav Controller-->
         <scene sceneID="gas-lO-2vS">
@@ -383,23 +383,24 @@
                                     <constraint firstAttribute="width" constant="187" id="fTY-NW-VBC"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1MX-4e-UNx">
-                                <rect key="frame" x="454" y="194" width="126" height="113"/>
+                            <webView hidden="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uZj-Ln-biP">
+                                <rect key="frame" x="247" y="265" width="240" height="128"/>
                                 <animations/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1MX-4e-UNx">
+                                <rect key="frame" x="247" y="180" width="126" height="113"/>
+                                <animations/>
+                                <accessibility key="accessibilityConfiguration" label=""/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="126" id="1hL-iR-sCF"/>
-                                    <constraint firstAttribute="height" constant="113" id="WzF-xG-Jsw"/>
+                                    <constraint firstAttribute="height" constant="113" id="Yeq-Tz-2Eu"/>
+                                    <constraint firstAttribute="width" constant="126" id="vZo-li-3Fh"/>
                                 </constraints>
                                 <state key="normal" title="Done"/>
                                 <connections>
                                     <action selector="doneBtnTapped:" destination="6hQ-fT-F6R" eventType="touchUpInside" id="Q8O-UD-YTd"/>
                                 </connections>
                             </button>
-                            <webView hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uZj-Ln-biP">
-                                <rect key="frame" x="247" y="265" width="240" height="128"/>
-                                <animations/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
-                            </webView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -407,16 +408,17 @@
                             <constraint firstItem="zj1-QW-FLZ" firstAttribute="top" secondItem="jdm-Wf-5zQ" secondAttribute="bottom" constant="8" symbolic="YES" id="31D-78-jQu"/>
                             <constraint firstItem="xFs-6w-Adu" firstAttribute="top" secondItem="zp9-mR-zoZ" secondAttribute="bottom" constant="51" id="3fA-5K-cm7"/>
                             <constraint firstItem="eTF-Dh-glc" firstAttribute="leading" secondItem="zj1-QW-FLZ" secondAttribute="leading" id="58c-at-jAW"/>
-                            <constraint firstItem="1MX-4e-UNx" firstAttribute="top" secondItem="zp9-mR-zoZ" secondAttribute="bottom" constant="130" id="5vw-8x-xnw"/>
                             <constraint firstAttribute="trailing" secondItem="jdm-Wf-5zQ" secondAttribute="trailing" id="9Um-eg-5qM"/>
                             <constraint firstItem="eTF-Dh-glc" firstAttribute="leading" secondItem="xFs-6w-Adu" secondAttribute="leading" id="F3A-Rb-h0h"/>
                             <constraint firstItem="zj1-QW-FLZ" firstAttribute="leading" secondItem="77P-mz-mSi" secondAttribute="leadingMargin" id="Ief-Tx-aS6"/>
                             <constraint firstItem="jdm-Wf-5zQ" firstAttribute="top" secondItem="eTF-Dh-glc" secondAttribute="bottom" constant="8" symbolic="YES" id="Ir3-dw-Rkk"/>
                             <constraint firstAttribute="trailingMargin" secondItem="eTF-Dh-glc" secondAttribute="trailing" constant="14" id="ItV-3X-q3g"/>
-                            <constraint firstItem="zj1-QW-FLZ" firstAttribute="trailing" secondItem="1MX-4e-UNx" secondAttribute="trailing" id="J4m-KN-lgQ"/>
+                            <constraint firstItem="1MX-4e-UNx" firstAttribute="leading" secondItem="xFs-6w-Adu" secondAttribute="trailing" constant="40" id="KhE-zv-XDN"/>
                             <constraint firstItem="jdm-Wf-5zQ" firstAttribute="leading" secondItem="77P-mz-mSi" secondAttribute="leading" id="KkB-tm-qDe"/>
                             <constraint firstItem="eTF-Dh-glc" firstAttribute="top" secondItem="xFs-6w-Adu" secondAttribute="bottom" constant="69" id="RJp-KV-Oow"/>
+                            <constraint firstItem="1MX-4e-UNx" firstAttribute="leading" secondItem="uZj-Ln-biP" secondAttribute="leading" id="TJs-4S-Gp8"/>
                             <constraint firstItem="zj1-QW-FLZ" firstAttribute="centerX" secondItem="jdm-Wf-5zQ" secondAttribute="centerX" id="UDL-dd-Bl5"/>
+                            <constraint firstItem="1MX-4e-UNx" firstAttribute="top" secondItem="zp9-mR-zoZ" secondAttribute="bottom" constant="116" id="WB5-D9-eio"/>
                             <constraint firstItem="6iZ-XJ-Zds" firstAttribute="top" secondItem="zj1-QW-FLZ" secondAttribute="bottom" constant="17" id="lgD-1X-tgU"/>
                         </constraints>
                     </view>
@@ -467,17 +469,14 @@
                                     <action selector="alarmCancelButtonTapped:" destination="9Wj-QC-ZRE" eventType="touchUpInside" id="ZyU-L1-Kof"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cmQ-fX-IR8">
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cmQ-fX-IR8">
                                 <rect key="frame" x="95" y="259" width="410" height="68"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="68" id="4Pm-XJ-jII"/>
                                 </constraints>
-                                <state key="normal" title="Set Alarm">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                                <state key="normal" title="Set Alarm"/>
                                 <connections>
                                     <action selector="alarmSetButtonTapped:" destination="9Wj-QC-ZRE" eventType="touchUpInside" id="rB7-CW-c6l"/>
                                 </connections>
@@ -513,7 +512,7 @@
                     </view>
                     <toolbarItems>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="TOb-CQ-EWE"/>
-                        <barButtonItem title="Done" id="l5E-lR-N6P"/>
+                        <barButtonItem systemItem="done" id="l5E-lR-N6P"/>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="EsP-gh-oNd"/>
                     </toolbarItems>
                     <navigationItem key="navigationItem" id="EAd-6f-TPt"/>
@@ -533,7 +532,7 @@
         <image name="default" width="540" height="540"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="mhL-0k-dE3"/>
+        <segue reference="HFz-yg-7vj"/>
         <segue reference="uBk-yA-EP1"/>
     </inferredMetricsTieBreakers>
 </document>

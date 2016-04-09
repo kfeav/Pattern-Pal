@@ -6,27 +6,27 @@ provides-nominal:
 provides-member:
 - ["C13ScavengerHunt17ScavengerHuntItem", ""]
 provides-dynamic-lookup:
-- "time"
-- "minsKey"
-- "isCompleted"
-- "photo"
-- "nameKey"
 - "name"
+- "minsKey"
+- "nameKey"
 - "photoKey"
+- "time"
 - "encodeWithCoder"
+- "photo"
 - "timeKey"
+- "isCompleted"
 depends-top-level:
-- "NSCoding"
-- "StringLiteralType"
-- !private "!="
-- "String"
-- "Double"
-- "NSCoder"
-- "Bool"
-- "NSTimer"
 - "ScavengerHuntItem"
+- "NSTimer"
+- !private "!="
 - "UIImage"
+- "Double"
+- "String"
+- "NSCoding"
+- "Bool"
+- "StringLiteralType"
 - "NSObject"
+- "NSCoder"
 depends-member:
 - !private ["PSs9AnyObject", "decodeObjectForKey"]
 - !private ["PSs9AnyObject", "encodeObject"]

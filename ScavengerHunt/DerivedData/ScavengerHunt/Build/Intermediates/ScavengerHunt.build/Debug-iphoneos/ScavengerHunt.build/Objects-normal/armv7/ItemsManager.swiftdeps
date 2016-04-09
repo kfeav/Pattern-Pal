@@ -7,20 +7,20 @@ provides-member:
 - ["C13ScavengerHunt12ItemsManager", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "NSSearchPathDomainMask"
-- !private "NSKeyedUnarchiver"
-- !private "StringLiteralType"
 - !private "!"
 - "ScavengerHuntItem"
-- "ItemsManager"
-- !private "NSFileManager"
-- !private "BooleanLiteralType"
-- !private "+"
 - !private "assertionFailure"
 - !private "NSSearchPathDirectory"
 - !private "NSSearchPathForDirectoriesInDomains"
+- !private "NSKeyedUnarchiver"
 - !private "NSKeyedArchiver"
+- "ItemsManager"
+- !private "StringLiteralType"
 - "String"
+- !private "+"
+- !private "BooleanLiteralType"
+- !private "NSSearchPathDomainMask"
+- !private "NSFileManager"
 depends-member:
 - !private ["PSs9AnyObject", "NSFileManager"]
 - !private ["PSs9AnyObject", "NSKeyedArchiver"]

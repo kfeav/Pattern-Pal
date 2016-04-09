@@ -6,11 +6,11 @@ provides-nominal:
 provides-member:
 - ["C13ScavengerHunt34setting_for_a_task_view_controller", ""]
 provides-dynamic-lookup:
-- "didReceiveMemoryWarning"
 - "viewDidLoad"
+- "didReceiveMemoryWarning"
 depends-top-level:
-- "UIViewController"
 - "setting_for_a_task_view_controller"
+- "UIViewController"
 depends-member:
 - ["PSs9AnyObject", "didReceiveMemoryWarning"]
 - ["PSs9AnyObject", "init"]
