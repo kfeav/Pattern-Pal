@@ -128,7 +128,6 @@
         <!--List View Controller-->
         <scene sceneID="lle-op-LCg">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qJS-7D-cgh" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="18w-T0-PHb" customClass="ListViewController" customModule="ScavengerHunt" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="30" sectionHeaderHeight="22" sectionFooterHeight="22" id="tqm-9c-RVg">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
@@ -187,6 +186,7 @@
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qJS-7D-cgh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2320" y="1228"/>
         </scene>
