@@ -36,9 +36,10 @@ class TaskViewController : UIViewController {
     var timeCount:NSTimeInterval = 10.0
     
     @IBAction func doneBtnTapped(sender: AnyObject) {
-        let url = NSURL (string: "http://192.168.2.9/$2");
-        let req = NSURLRequest(URL: url!);
-        LightsWebView.loadRequest(req);
+//        let url = NSURL (string: "http://192.168.2.9/$2");
+//        let req = NSURLRequest(URL: url!);
+//        LightsWebView.loadRequest(req);
+        
         nextTask();
     }
     

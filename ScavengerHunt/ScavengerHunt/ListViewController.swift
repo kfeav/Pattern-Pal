@@ -11,7 +11,6 @@ import UIKit
 
 class ListViewController: UITableViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     let myManager = ItemsManager()
-    
     /*
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let imagePicker = UIImagePickerController()
@@ -36,7 +35,6 @@ class ListViewController: UITableViewController, UIImagePickerControllerDelegate
         }
     }
     */
-    
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "editTask" {
@@ -71,12 +69,14 @@ class ListViewController: UITableViewController, UIImagePickerControllerDelegate
             }
         }
     }
-    
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        print(myManager.items.count)
         return myManager.items.count
+        
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
         navigationItem.rightBarButtonItem = editButtonItem();
         let cell = tableView.dequeueReusableCellWithIdentifier("ListViewCell", forIndexPath: indexPath) as UITableViewCell
         
@@ -97,6 +97,12 @@ class ListViewController: UITableViewController, UIImagePickerControllerDelegate
         }
         
         cell.textLabel?.text = textStr
+        cell.textLabel?.backgroundColor = UIColor.lightGrayColor()
+        cell.layer.cornerRadius = 25
+        cell.layer.backgroundColor = UIColor.lightGrayColor().CGColor
+//        cell.layer.borderColor = UIColor.clearColor().CGColor
+//        cell.layer.borderWidth = 35.0
+        
         return cell
     }
     
