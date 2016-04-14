@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		0B1155F01CBCAA1A0015B0E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1155EF1CBCAA1A0015B0E0 /* ViewController.swift */; };
+		4886F12A1CC0146A006D2697 /* PPAppIcon2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4886F1271CC0146A006D2697 /* PPAppIcon2.png */; };
+		4886F12B1CC0146A006D2697 /* PPHome.png in Resources */ = {isa = PBXBuildFile; fileRef = 4886F1281CC0146A006D2697 /* PPHome.png */; };
+		4886F12C1CC0146A006D2697 /* PPLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4886F1291CC0146A006D2697 /* PPLogo.png */; };
 		48BD182079209F24738A8CC9 /* Pods_ScavengerHunt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49F76B120C67C9FA4F1337BC /* Pods_ScavengerHunt.framework */; };
-		4A872D6C1C8F569600E86418 /* PPHome.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A872D6A1C8F569600E86418 /* PPHome.png */; };
-		4A872D6D1C8F569600E86418 /* PPLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A872D6B1C8F569600E86418 /* PPLogo.png */; };
-		4A872D711C8F649500E86418 /* PPAppIcon2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A872D701C8F649500E86418 /* PPAppIcon2.png */; };
 		6938DAA01BD667E1004B79B7 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6938DA9F1BD667E1004B79B7 /* AddViewController.swift */; };
 		693EBA041BF44A8300CA294C /* TastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693EBA031BF44A8300CA294C /* TastViewController.swift */; };
 		696F5DF41BCB2456000B50AE /* main screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696F5DF31BCB2456000B50AE /* main screen.swift */; };
@@ -43,10 +43,10 @@
 /* Begin PBXFileReference section */
 		0B1155EF1CBCAA1A0015B0E0 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3A13EA2CD7B3010AC8626778 /* Pods-ScavengerHunt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScavengerHunt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ScavengerHunt/Pods-ScavengerHunt.debug.xcconfig"; sourceTree = "<group>"; };
+		4886F1271CC0146A006D2697 /* PPAppIcon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PPAppIcon2.png; sourceTree = "<group>"; };
+		4886F1281CC0146A006D2697 /* PPHome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PPHome.png; sourceTree = "<group>"; };
+		4886F1291CC0146A006D2697 /* PPLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PPLogo.png; sourceTree = "<group>"; };
 		49F76B120C67C9FA4F1337BC /* Pods_ScavengerHunt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScavengerHunt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4A872D6A1C8F569600E86418 /* PPHome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PPHome.png; path = ../../../PPHome.png; sourceTree = "<group>"; };
-		4A872D6B1C8F569600E86418 /* PPLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PPLogo.png; path = ../../../PPLogo.png; sourceTree = "<group>"; };
-		4A872D701C8F649500E86418 /* PPAppIcon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PPAppIcon2.png; path = ../../../PPAppIcon2.png; sourceTree = "<group>"; };
 		6938DA9F1BD667E1004B79B7 /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		693EBA031BF44A8300CA294C /* TastViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TastViewController.swift; sourceTree = "<group>"; };
 		696F5DF31BCB2456000B50AE /* main screen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "main screen.swift"; sourceTree = "<group>"; };
@@ -129,9 +129,9 @@
 		A7B0862F1BA243C2000DE495 /* ScavengerHunt */ = {
 			isa = PBXGroup;
 			children = (
-				4A872D701C8F649500E86418 /* PPAppIcon2.png */,
-				4A872D6A1C8F569600E86418 /* PPHome.png */,
-				4A872D6B1C8F569600E86418 /* PPLogo.png */,
+				4886F1271CC0146A006D2697 /* PPAppIcon2.png */,
+				4886F1281CC0146A006D2697 /* PPHome.png */,
+				4886F1291CC0146A006D2697 /* PPLogo.png */,
 				699AEE491BF7D29500438CC9 /* getUp.jpg */,
 				69B28BB41BF583F700471D27 /* cong.png */,
 				69B28BB21BF57D7200471D27 /* smileface.jpg */,
@@ -231,7 +231,7 @@
 				TargetAttributes = {
 					A7B0862C1BA243C2000DE495 = {
 						CreatedOnToolsVersion = 6.1.1;
-						DevelopmentTeam = YBWGF7G425;
+						DevelopmentTeam = A8A35LSHF9;
 					};
 					A7B086411BA243C2000DE495 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -265,13 +265,13 @@
 			files = (
 				6972B5871BD6AA2D00DC14DA /* Main.storyboard in Resources */,
 				699AEE4A1BF7D29500438CC9 /* getUp.jpg in Resources */,
-				4A872D711C8F649500E86418 /* PPAppIcon2.png in Resources */,
 				69B28BB51BF583F700471D27 /* cong.png in Resources */,
 				69B28BB31BF57D7200471D27 /* smileface.jpg in Resources */,
+				4886F12A1CC0146A006D2697 /* PPAppIcon2.png in Resources */,
 				A7B0863D1BA243C2000DE495 /* LaunchScreen.xib in Resources */,
-				4A872D6C1C8F569600E86418 /* PPHome.png in Resources */,
-				4A872D6D1C8F569600E86418 /* PPLogo.png in Resources */,
+				4886F12B1CC0146A006D2697 /* PPHome.png in Resources */,
 				A7B0863A1BA243C2000DE495 /* Images.xcassets in Resources */,
+				4886F12C1CC0146A006D2697 /* PPLogo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,10 +470,10 @@
 				INFOPLIST_FILE = ScavengerHunt/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.katy-pattern-pal-build-identifier.ScavengerHunt";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hae-pattern-pal-build-identifier.ScavengerHunt";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -487,10 +487,10 @@
 				INFOPLIST_FILE = ScavengerHunt/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.katy-pattern-pal-build-identifier.ScavengerHunt";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hae-pattern-pal-build-identifier.ScavengerHunt";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
