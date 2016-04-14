@@ -8,6 +8,21 @@
 
 import Foundation
 import UIKit
+import CVCalendar
+
+//let RFC3339DateFormatter = NSDateFormatter()
+//RFC3339DateFormatter.locale = NSLocale(localeIdentifier: "en_US_POSIX")
+//RFC3339DateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZZZZZ"
+//RFC3339DateFormatter.timeZone = NSTimeZone(forSecondsFromGMT: 0)
+//
+///* 39 minutes and 57 seconds after the 16th hour of December 19th, 1996 with an offset of -08:00 from UTC (Pacific Standard Time) */
+//let string = "1996-12-19T16:39:57-08:00"
+//let date = RFC3339DateFormatter.dateFromString(string)
+
+
+var GLOB_date = [NSDate().dayOfWeek()]
+var GLOB_date_components = [NSDateComponents]() // from today
+
 
 class TaskViewController : UIViewController {
 
@@ -36,10 +51,7 @@ class TaskViewController : UIViewController {
     var timeCount:NSTimeInterval = 10.0
     
     @IBAction func doneBtnTapped(sender: AnyObject) {
-//        let url = NSURL (string: "http://192.168.2.9/$2");
-//        let req = NSURLRequest(URL: url!);
-//        LightsWebView.loadRequest(req);
-        
+        GLOB_date_components.append( Manager.componentsForDate(NSDate() ) )
         nextTask();
     }
     
@@ -92,6 +104,10 @@ class TaskViewController : UIViewController {
         } else {
             if(myManager.items.count > 0){
                 timerLabel.text = "All tasks done";
+                
+                //TASKS HAVE BEEN FINISHED
+                
+                
                 imgView.image = UIImage(named:"cong.png");
                 taskLabel.text = "";
                 nextTaskLabel.text = "";
@@ -135,4 +151,18 @@ class TaskViewController : UIViewController {
         }
     }
     
+}
+
+
+//Helper
+extension NSDate {
+    func dayOfWeek() -> Int? {
+        if
+            let cal: NSCalendar = NSCalendar.currentCalendar(),
+            let comp: NSDateComponents = cal.components(.Weekday, fromDate: self) {
+                return comp.weekday
+        } else {
+            return nil
+        }
+    }
 }
