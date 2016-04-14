@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'DA9DDCF53F83CDFBB49A49FB'
-               BlueprintName = 'Pods-ScavengerHunt'
+               BlueprintIdentifier = '2A3B0BE5559B78AA8647C516'
+               BlueprintName = 'CGLMail'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'Pods_ScavengerHunt.framework'>
+               BuildableName = 'CGLMail.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
