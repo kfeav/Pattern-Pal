@@ -26,7 +26,6 @@ var GLOB_date_components = [NSDateComponents]() // from today
 
 class TaskViewController : UIViewController {
 
-    @IBOutlet weak var LightsWebView: UIWebView!
     let myManager = ItemsManager()
     var idx = 0
     
@@ -68,9 +67,7 @@ class TaskViewController : UIViewController {
         //
         timeCount = timeCount - timeInterval
         if (timeCount <= 0 ) {
-            let url = NSURL (string: "http://192.168.2.9/$2");
-            let req = NSURLRequest(URL: url!);
-            LightsWebView.loadRequest(req);
+
             nextTask();
         }else {
             timerLabel.text =  timeString(timeCount)
@@ -98,7 +95,6 @@ class TaskViewController : UIViewController {
         timer.invalidate();
         let url = NSURL (string:"http://192.168.2.9/$1");
         let req = NSURLRequest(URL: url!);
-        LightsWebView.loadRequest(req);
         if (idx < myManager.items.count){
             startTimer();
         } else {
@@ -143,7 +139,7 @@ class TaskViewController : UIViewController {
         timeCount = 30;
         timerLabel.text = timeString(timeCount)
         timer = NSTimer.scheduledTimerWithTimeInterval(timeInterval, target: self, selector: "timerDidEnd:", userInfo: "Task Done!", repeats: true)
-        imgView.image = UIImage(named:"getUp.jpg");
+        imgView.image = UIImage(named:"PPHome.png");
         if (myManager.items.count > 0){
             nextTaskLabel.text = "Next task: " + myManager.items[0].name;
         } else {
